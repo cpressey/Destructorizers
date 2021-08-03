@@ -141,6 +141,12 @@ something like the following in Haskell
 
 producing the `unList` function automatically.
 
+I should note that Haskell's libraries do contain some examples
+of individually-defined destructorizers, such as
+[either](https://hackage.haskell.org/package/base-4.15.0.0/docs/Prelude.html#v:either),
+but there doesn't seem to be anything systematic behind them,
+not even a convention.
+
 Dynamic versus static typing
 ----------------------------
 
