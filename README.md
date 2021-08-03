@@ -117,7 +117,7 @@ for example,
     length Nil = 0
     length (Cons _ tail) = 1 + length tail
 
-So if you have this, why would you want to use destructorizors
+So if you have this, why would you want to use destructorizers
 anyway?  Some reasons might be:
 
 *   Pattern-matching is a bit of work to implement.
