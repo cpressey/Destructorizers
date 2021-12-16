@@ -103,13 +103,24 @@ But it could just give you `mk-cons` and `mk-nil` and `un-list`.
 If you really wanted `car` or `cdr` or `nil?` for some reason, you
 could build them out of `un-list`.
 
-And really, it would be better for this to be built into a
-language anyway, instead of presented as a macro package that
+And really, it would be better for this to be built around a
+type system anyway, instead of presented as a macro package that
 any given installation may or may not be using.
 
-Some other languages have pattern matching.  They don't need to
-use destructorizers, because it's simple enough to destruct the
-data type with a pattern, and very expressive too.  In Haskell,
+Speaking of types, destructors in type theory also come close
+to this idea, but again, not quite.  There are two main differences
+that I can see.  The first is that, in type theory, destructors are
+reduction rules — essentially, syntactic constructs — whereas
+destructorizers (in their ideal form) are higher-order functions,
+"first-class" values that can be passed to and returned from other
+functions.  The other is that destructorizers have nothing to do
+with "types" (as type theory perceives them), and can easily be adapted
+for use in "untyped" (as type theory regards them) languages such
+as Scheme.
+
+Some other programming languages have pattern matching.  They don't
+need to use destructorizers, because it's simple enough to destruct
+the data type with a pattern, and very expressive too.  In Haskell,
 for example,
 
     data List α = Cons α List | Nil
