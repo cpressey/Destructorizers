@@ -1,6 +1,12 @@
 Destructorizers
 ===============
 
+_See also:_ [Lariat](https://github.com/catseye/Lariat#readme)
+∘ [LCF-style-ND](https://github.com/cpressey/LCF-style-ND#readme)
+∘ [Nested Modal Transducers](https://github.com/cpressey/Nested-Modal-Transducers#readme)
+
+- - - -
+
 The legacy of `car` and `cdr`
 -----------------------------
 
